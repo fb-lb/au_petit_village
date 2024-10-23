@@ -3,7 +3,8 @@ header {
     background-color: #FDD90B;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 5px 10px #FDD90B;
+    box-shadow: 0 5px 15px 10px #FDD90B;
+    position: relative;
 }
 
 header > a {
@@ -30,7 +31,6 @@ ul > li > a {
     text-decoration: none;
     font-family: 'Comfortaa', Arial, sans-serif;
     font-weight: 900;
-    font-size: 1rem;
     text-shadow: 0 0 1px black;
     transition: text-shadow 0.5s;
 }
@@ -45,7 +45,7 @@ img {
 
 @media screen and (max-width: 768px) {
     img {
-        width: 120px;
+        width: 90px;
     }
 
     header > a {
@@ -58,19 +58,27 @@ img {
         justify-content:center;
         gap: 40px;
     }
+
+    ul > li > a {
+        font-size: 1.3rem;
+    }
 }
   
 @media screen and (min-width: 769px) and (max-width: 992px) {
     img {
-        width: 150px;
+        width: 120px;
     }
 
     header > a {
-        margin: 10px 0 5px 40px;
+        margin: 20px 0 5px 40px;
     }
 
     ul {
         margin-right: 100px;
+    }
+
+    ul > li > a {
+        font-size: 1.7rem;
     }
 }
 
@@ -80,10 +88,24 @@ img {
     }
 
     header > a {
-        margin: 15px 0 10px 45%
+        margin: 15px 0 10px 44%
     }
 
     ul {
-        margin-right: 10vw;
+        padding-right: 10vw;
+        margin-left: 40px;
+    }
+
+    ul > li > a {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1300px) {
+    ul {
+        margin-right: 5vw;
+        flex-direction: column;
+        justify-content:center;
+        gap: 40px;
     }
 }
