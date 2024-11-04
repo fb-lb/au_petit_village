@@ -24,9 +24,9 @@
             Veniam alias perferendis modi ea quidem ad vero voluptatem. Cum atque minima reiciendis esse? 
             Dolor sed deleniti, autem ut dolores voluptates optio!
         </p>
-        <input class="products__search" type="text" placeholder="Rechercher">
+        <input class="products__search" (input)="onInputChange($event)" type="text" placeholder="Rechercher">
         <div class="products__container">
-            <section class="products__product" *ngFor="let figurine of figurines">
+            <section class="products__product" *ngFor="let figurine of figurines; trackBy: figurineName">
                 <img class="products__image" [src]="figurine.imgSrc" [alt]="figurine.imgAlt">
                 <h3 class="products__name">{{figurine.name}}</h3>
                 <p class="products__description">{{figurine.description}}</p>
