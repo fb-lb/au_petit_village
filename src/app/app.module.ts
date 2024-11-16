@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { FilterByNamePipe } from './filter-by-name.pipe';
+import { SortByPricePipe } from './sort-by-price.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    FilterByNamePipe,
+    SortByPricePipe
   ],
   imports: [
     BrowserModule,
