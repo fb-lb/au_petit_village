@@ -96,10 +96,46 @@ main {
     font-family: 'Comfortaa', Arial, sans-serif;
 }
 
-.products__search {
+.products__search-container {
+    margin: 10px 0 40px 0;
+}
+
+.products__search-bar {
     border: 1px solid #151217;
     border-radius: 20px;
     padding: 5px 10px;
+}
+
+.products__sort-container {
+    display: flex;
+    align-items: center;
+}
+
+.products__sort-text {
+    margin: 0;
+    color: #151217;
+    font-family: 'Comfortaa', Arial, sans-serif;
+}
+
+.products__sort-buttons {
+    display: flex;
+    gap: 3px;
+    margin-left: 3px;
+}
+
+.products__sort-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    display: flex;
+}
+
+.products__sort-image {
+    width: 100%;
+}
+
+.products__sort-image:hover {
+    cursor: pointer;
 }
 
 .products__container {
@@ -230,9 +266,26 @@ main {
         line-height: calc(1rem + 12px);
     }
 
-    .products__search {
+    .porducts__seach-container {
         margin: 10px 0 20px 0;
+    }
+
+    .products__search-bar {
         font-size: 1rem;
+    }
+
+    .products__sort-container {
+        margin-top: 5px;
+        justify-content: center;
+    }
+
+    .products__sort-text {
+        font-size: 0.8rem;
+    }
+
+    .products__sort-button {
+        width: 15px;
+        height: 15px;
     }
 
     .products__container {
@@ -317,10 +370,23 @@ main {
         font-size: 1.1rem;
         line-height: calc(1.1rem + 12px);
     }
-
-    .products__search {
-        margin: 10px 0 40px 0;
+    
+    .products__search-bar {
         font-size: 1.1rem;
+    }
+
+    .products__sort-container {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .products__sort-text {
+        font-size: 0.9rem;
+    }
+
+    .products__sort-button {
+        width: 15px;
+        height: 15px;
     }
 
     .products__container {
@@ -400,10 +466,24 @@ main {
         margin: 30px 0;
     }
 
-    .products__search {
-        margin-bottom: 40px;
-        font-size: 1.2rem;
+    .products__search-container {
         align-self: end;
+    }
+
+    .products__search-bar {
+        font-size: 1.2rem;
+    }
+
+    .products__sort-container {
+     margin: 5px 0 0 10px;
+    }
+
+    .products__sort-text {
+        font-size: 1rem;
+    }
+
+    .products__sort-buttons {
+        flex-direction: column;
     }
 
     .products__container {
@@ -431,6 +511,11 @@ main {
     .products__buttons {
         margin: 20px 0;
         gap: 10px;
+    }
+
+    .products__sort-button {
+        width: 6px;
+        height: 6px;
     }
 
     .products__link {

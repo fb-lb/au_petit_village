@@ -24,13 +24,26 @@
             Veniam alias perferendis modi ea quidem ad vero voluptatem. Cum atque minima reiciendis esse? 
             Dolor sed deleniti, autem ut dolores voluptates optio!
         </p>
-        <input class="products__search" (input)="onInputChange($event)" type="text" placeholder="Rechercher">
+        <div class="products__search-container">
+            <input class="products__search-bar" (input)="onInputChange($event)" type="text" placeholder="Rechercher">
+            <div class="products__sort-container">
+                <p class="products__sort-text">Filtrer par : Prix</p>
+                <div class="products__sort-buttons">
+                    <button class="products__sort-button" (click)='orderPrice("ascendingOrder")'>
+                        <img class="products__sort-image" src="/assets/images/up_arrow.webp" alt="Flèche noire pointant vers le haut">
+                    </button>
+                    <button class="products__sort-button" (click)='orderPrice("descendingOrder")'>
+                        <img class="products__sort-image" src="/assets/images/down_arrow.webp" alt="Flèche noire pointant vers le bas">
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="products__container">
-            <section class="products__product" *ngFor="let figurine of figurines; trackBy: figurineName">
+            <section class="products__product" *ngFor="let figurine of (figurines | filterByName : inputText | sortByPrice : priceSorting); trackBy: figurineName">
                 <img class="products__image" [src]="figurine.imgSrc" [alt]="figurine.imgAlt">
                 <h3 class="products__name">{{figurine.name}}</h3>
                 <p class="products__description">{{figurine.description}}</p>
-                <p class="products__price">{{figurine.price}}</p>
+                <p class="products__price">{{figurine.price}}€</p>
                 <div class="products__buttons">
                     <a class="products__link" [href]="figurine.link">Voir</a>
                     <button class="products__add-cart">Acheter</button>
