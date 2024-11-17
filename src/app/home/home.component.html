@@ -42,10 +42,10 @@
             <section class="products__product" *ngFor="let figurine of (figurines | filterByName : inputText | sortByPrice : priceSorting); trackBy: figurineName">
                 <img class="products__image" [src]="figurine.imgSrc" [alt]="figurine.imgAlt">
                 <h3 class="products__name">{{figurine.name}}</h3>
-                <p class="products__description">{{figurine.description}}</p>
+                <p class="products__description">{{figurine.shortDescription}}</p>
                 <p class="products__price">{{figurine.price}}€</p>
                 <div class="products__buttons">
-                    <a class="products__link" [href]="figurine.link">Voir</a>
+                    <a class="products__link" routerLink="/product/{{figurine.id}}">Voir</a>
                     <button class="products__add-cart">Acheter</button>
                 </div>
             </section>
