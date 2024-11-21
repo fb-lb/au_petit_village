@@ -13,7 +13,7 @@
                 quibusdam consectetur dicta hic ab excepturi iste tempora quae placeat saepe natus rem facere?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <a class="about__link" href="">En savoir plus</a>
+            <a class="about__link" routerLink="/a-propos">En savoir plus</a>
         </section>
         <img class="about__image" src="/assets/images/banquet.webp" alt="Dessins des habitants du village d'Astérix à un banquet.">
     </div>
@@ -45,7 +45,7 @@
                 <p class="products__description">{{figurine.shortDescription}}</p>
                 <p class="products__price">{{figurine.price}}€</p>
                 <div class="products__buttons">
-                    <a class="products__link" routerLink="/product/{{figurine.id}}">Voir</a>
+                    <a class="products__link" routerLink="/produit/{{figurine.id}}">Voir</a>
                     <button class="products__add-cart">Acheter</button>
                 </div>
             </section>
