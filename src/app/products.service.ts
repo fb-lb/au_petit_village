@@ -5,6 +5,19 @@ import { Injectable } from '@angular/core';
 })
 export class ProductsService {
 
+  aboutDatabase = {
+    introduction : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci molestiae, amet expedita quibusdam officiis ad quia nobis natus perferendis itaque quod placeat sed est velit, laborum modi ipsam! Molestiae, ipsam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, optio aliquam voluptatibus labore, eligendi ex sunt quibusdam consectetur dicta hic ab excepturi iste tempora quae placeat saepe natus rem facere? Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    firstText : {
+      firstParagraph : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dolor orci, tempus id consectetur et, bibendum nec dui. Duis nisi urna, aliquam et est mollis, sollicitudin blandit augue. Nam sed mollis nisl. Nunc non augue tellus. Nullam at pellentesque quam. Nullam a nulla vel quam consectetur pretium sed non lacus. Aenean interdum ante in dignissim porttitor. Cras elementum velit a nulla viverra, sed mattis dui ullamcorper.",
+      secondParagraph : "Nullam vulputate condimentum sollicitudin. Quisque placerat placerat convallis. Aliquam erat volutpat. Duis nisl magna, laoreet pulvinar libero sed, vehicula condimentum sapien. Aenean at viverra neque. Duis aliquam, lorem nec pulvinar maximus, nisi erat ullamcorper metus, ut consectetur nulla mi ac ex. Etiam aliquet, ante id tristique sollicitudin, diam orci finibus sem, vel convallis justo orci nec nisl. Sed nec est aliquet, imperdiet mi non, tempus lacus. Aliquam porttitor blandit enim. Duis faucibus nunc finibus, egestas urna nec, congue felis. Suspendisse sit amet tellus mollis, pellentesque massa in, laoreet."
+    },
+    secondText : {
+      firstParagraph : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sagittis felis metus, sit amet auctor quam dapibus non. Morbi placerat metus ac condimentum dictum. Morbi eget fringilla orci.",
+      secondParagraph : "In ullamcorper metus ligula, ut viverra ante vehicula vel. Curabitur lobortis, ligula in venenatis accumsan, lorem velit efficitur urna, sed vulputate urna ante eu massa. Phasellus tincidunt ac massa nec lobortis. Phasellus ex leo, dictum eu dui sit amet, tristique vulputate ipsum. Proin tincidunt ex turpis, non semper orci luctus in. Proin hendrerit semper gravida. Nulla mi purus, dapibus ac massa ut, cursus dignissim lacus. Aenean ornare tellus urna, at rhoncus risus porttitor a.",
+      thirdParagraph : "Praesent imperdiet urna mauris, porta pharetra diam pellentesque quis. Pellentesque malesuada ornare nisl rutrum porta. Duis venenatis erat non velit cursus fermentum sed ut nisl. Donec luctus justo vehicula sapien auctor, et accumsan sapien tincidunt. Phasellus non sem tristique, gravida nulla ut, scelerisque ex. Duis nisl dolor, fringilla nec mauris quis, commodo elementum erat. Fusce tincidunt ante ac nisi interdum, eget pulvinar massa rutrum. Mauris ac augue venenatis, luctus urna non, elementum mauris. Nam ac lorem eu tellus egestas laoreet a a nunc. Mauris tempus at elit."
+    }
+  }
+
   productsDatabase: any[] = [
     {
       id : "abraracourcix",

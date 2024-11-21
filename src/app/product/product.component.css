@@ -48,7 +48,6 @@ main > div {
 .product__description {
     font-family: 'Comfortaa', Arial, sans-serif;
     margin : 10px 0 40px 0;
-    line-height: 1.5rem;
 }
 
 .product__price {
@@ -132,6 +131,7 @@ main > div {
 
     .product__description {
         font-size: 1rem;
+        line-height: calc(1rem + 10px);
         text-align: center;
     }
 
@@ -181,6 +181,7 @@ main > div {
 
     .product__description {
         font-size: 1.1rem;
+        line-height: calc(1.1rem + 10px);
     }
 
     .product__price {
@@ -228,6 +229,7 @@ main > div {
 
     .product__description {
         font-size: 1.2rem;
+        line-height: calc(1.2rem + 10px);
     }
 
     .product__price {
