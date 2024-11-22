@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { FilterByNamePipe } from './filter-by-name.pipe';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { ProductComponent } from './product/product.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,14 @@ import { AboutComponent } from './about/about.component';
     FilterByNamePipe,
     SortByPricePipe,
     ProductComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormControl,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
