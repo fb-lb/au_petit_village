@@ -1,5 +1,7 @@
 # AuPetitVillage
 
+This project is a e-commerce website of figurines about the adventures of "Astérix et Obélix".
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
 
 ## Development server
