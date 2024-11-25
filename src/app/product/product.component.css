@@ -39,6 +39,7 @@ main > div {
 .product__down-text {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .product__title {
@@ -58,7 +59,7 @@ main > div {
 .product__form {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 20px 0 5px 0;
     gap: 20px;
 }
 
@@ -95,6 +96,14 @@ main > div {
     background-color:#151217;
     color:white;
     cursor: pointer;
+}
+
+.product__error {
+    font-family: 'Comfortaa', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #DA001E;
+    font-weight: bold;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {

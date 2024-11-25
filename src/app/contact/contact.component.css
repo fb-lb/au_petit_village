@@ -27,7 +27,7 @@ h1 {
 }
 
 .form__option {
-    padding-bottom: 30px;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -45,7 +45,17 @@ input {
     font-size: 1rem;
 }
 
+.form__error {
+    margin: 5px 0 0 0;
+    text-align: right;
+    font-family: 'Comfortaa', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #DA001E;
+    font-weight: bold;
+}
+
 .form__text-area-container {
+    margin-top: 30px;
     display: flex;
     gap: 15px;
     width: 100%;
@@ -113,12 +123,9 @@ button:hover{
         width: 100px;
     }
 
-    textarea {
-        margin-bottom: 20px;
-    }
-
     button {
         font-size: 1rem;
+        margin-top: 20px;
     }
 }
 
@@ -152,12 +159,9 @@ button:hover{
         width: 140px;
     }
 
-    textarea {
-        margin-bottom: 40px;
-    }
-
     button {
         font-size: 1.1rem;
+        margin-top: 40px;
     }
 }
 
@@ -191,11 +195,8 @@ button:hover{
         width: 170px;
     }
 
-    textarea {
-        margin-bottom: 40px;
-    }
-
     button {
         font-size: 1.2rem;
+        margin-top: 40px;
     }
 }
